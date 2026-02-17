@@ -1,3 +1,6 @@
+console.log("Green Habit Tracker loaded");
+
+
 const habits = document.querySelectorAll(".habit");
 const scoreDisplay = document.getElementById("score");
 const resetBtn = document.getElementById("resetBtn");
@@ -24,11 +27,23 @@ window.onload = function () {
 // Update score when checkbox changes
 habits.forEach((habit) => {
     habit.addEventListener("change", function () {
+
         if (this.checked) {
             totalScore += parseInt(this.value);
         } else {
             totalScore -= parseInt(this.value);
         }
+
+        if (totalScore >= 30) {
+            console.log("Great job staying green!");
+        }
+
+        scoreDisplay.textContent = totalScore;
+        saveProgress();
+    });
+});
+
+
 
         scoreDisplay.textContent = totalScore;
 
@@ -55,7 +70,10 @@ resetBtn.addEventListener("click", function () {
 
     habits.forEach((habit) => {
         habit.checked = false;
+
     });
+
+    alert("Progress has been reset.");
 
     localStorage.removeItem("greenScore");
     localStorage.removeItem("greenChecks");
