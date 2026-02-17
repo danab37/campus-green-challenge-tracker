@@ -58,7 +58,10 @@ resetBtn.addEventListener("click", function () {
 
     habits.forEach((habit) => {
         habit.checked = false;
+
     });
+
+    alert("Progress has been reset.");
 
     localStorage.removeItem("greenScore");
     localStorage.removeItem("greenChecks");
