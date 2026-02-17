@@ -52,6 +52,15 @@ h1 {
     cursor: pointer;
 }
 
+#resetBtn {
+    transition: 0.3s;
+}
+
+
+.container {
+    border: 1px solid #e0e0e0;
+}
+
 #resetBtn:hover {
-    background-color: #256628;
+    transform: scale(1.03);
 }
