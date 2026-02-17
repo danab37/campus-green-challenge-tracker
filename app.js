@@ -27,11 +27,23 @@ window.onload = function () {
 // Update score when checkbox changes
 habits.forEach((habit) => {
     habit.addEventListener("change", function () {
+
         if (this.checked) {
             totalScore += parseInt(this.value);
         } else {
             totalScore -= parseInt(this.value);
         }
+
+        if (totalScore >= 30) {
+            console.log("Great job staying green!");
+        }
+
+        scoreDisplay.textContent = totalScore;
+        saveProgress();
+    });
+});
+
+
 
         scoreDisplay.textContent = totalScore;
 
