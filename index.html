@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Green Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Campus Green Habit Tracker</h1>
+        <p class="subtitle">Track your daily eco habits and earn points.</p>
+
+        <div class="habits">
+            <label>
+                <input type="checkbox" class="habit" value="10">
+                Brought reusable water bottle (+10)
+            </label>
+
+            <label>
+                <input type="checkbox" class="habit" value="15">
+                Recycled waste properly (+15)
+            </label>
+
+            <label>
+                <input type="checkbox" class="habit" value="20">
+                Used public transport / carpool (+20)
+            </label>
+
+            <label>
+                <input type="checkbox" class="habit" value="5">
+                Turned off unused lights (+5)
+            </label>
+        </div>
+
+        <div class="score-section">
+            <h2>Total Points: <span id="score">0</span></h2>
+        </div>
+
+        <button id="resetBtn">Reset Week</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
