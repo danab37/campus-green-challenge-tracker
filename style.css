@@ -55,3 +55,7 @@ h1 {
 #resetBtn:hover {
     background-color: #256628;
 }
+
+.container {
+    border: 1px solid #e0e0e0;
+}
