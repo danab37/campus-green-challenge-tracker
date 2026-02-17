@@ -1,3 +1,6 @@
+console.log("Green Habit Tracker loaded");
+
+
 const habits = document.querySelectorAll(".habit");
 const scoreDisplay = document.getElementById("score");
 const resetBtn = document.getElementById("resetBtn");
